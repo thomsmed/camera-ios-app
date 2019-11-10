@@ -10,7 +10,27 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+        NavigationView() {
+            VStack() {
+                Image("apple")
+                Spacer()
+                VStack {
+                    NavigationLink(destination: ImagePickerController()) {
+                        Text("Pick image")
+                    }
+                    .padding()
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                        Text("Default camera")
+                    }
+                    .padding()
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                        Text("Custom camera")
+                    }
+                    .padding()
+                }
+            }
+        }
+    
     }
 }
 
@@ -19,3 +39,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED56CE9323789AD5007BC487 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED56CE9223789AD5007BC487 /* ImagePickerController.swift */; };
 		EDC1161523784777002934FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1161423784777002934FC /* AppDelegate.swift */; };
 		EDC1161723784777002934FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1161623784777002934FC /* SceneDelegate.swift */; };
 		EDC1161923784777002934FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1161823784777002934FC /* ContentView.swift */; };
@@ -35,7 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EDC1161123784777002934FC /* camera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = camera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED56CE9223789AD5007BC487 /* ImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
+		EDC1161123784777002934FC /* Custom Camera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Custom Camera.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC1161423784777002934FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDC1161623784777002934FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EDC1161823784777002934FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,7 +91,7 @@
 		EDC1161223784777002934FC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EDC1161123784777002934FC /* camera.app */,
+				EDC1161123784777002934FC /* Custom Camera.app */,
 				EDC1162723784778002934FC /* cameraTests.xctest */,
 				EDC1163223784778002934FC /* cameraUITests.xctest */,
 			);
@@ -102,6 +104,7 @@
 				EDC1161423784777002934FC /* AppDelegate.swift */,
 				EDC1161623784777002934FC /* SceneDelegate.swift */,
 				EDC1161823784777002934FC /* ContentView.swift */,
+				ED56CE9223789AD5007BC487 /* ImagePickerController.swift */,
 				EDC1161A23784778002934FC /* Assets.xcassets */,
 				EDC1161F23784778002934FC /* LaunchScreen.storyboard */,
 				EDC1162223784778002934FC /* Info.plist */,
@@ -153,7 +156,7 @@
 			);
 			name = camera;
 			productName = camera;
-			productReference = EDC1161123784777002934FC /* camera.app */;
+			productReference = EDC1161123784777002934FC /* Custom Camera.app */;
 			productType = "com.apple.product-type.application";
 		};
 		EDC1162623784778002934FC /* cameraTests */ = {
@@ -270,6 +273,7 @@
 				EDC1161523784777002934FC /* AppDelegate.swift in Sources */,
 				EDC1161723784777002934FC /* SceneDelegate.swift in Sources */,
 				EDC1161923784777002934FC /* ContentView.swift in Sources */,
+				ED56CE9323789AD5007BC487 /* ImagePickerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +448,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thomsmed.camera;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Custom Camera";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -464,7 +468,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thomsmed.camera;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Custom Camera";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
