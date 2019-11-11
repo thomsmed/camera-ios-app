@@ -19,7 +19,7 @@ struct ContentView: View {
                         Text("Pick image")
                     }
                     .padding()
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                    NavigationLink(destination: CameraCaptureController()) {
                         Text("Default camera")
                     }
                     .padding()

@@ -11,14 +11,26 @@ import UIKit
 
 struct ImagePickerController: UIViewControllerRepresentable {
     
-    func makeUIViewController(context: Context) -> UIImagePickerController {
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
+
+    func makeUIViewController(context: UIViewControllerRepresentableContext<ImagePickerController>) -> UIImagePickerController {
         let imagePickerController = UIImagePickerController()
         imagePickerController.sourceType = .savedPhotosAlbum
         return imagePickerController
     }
     
-    func updateUIViewController(_ uiViewController: UIImagePickerController, context: Context) {
+    func updateUIViewController(_ uiViewController: UIImagePickerController, context: UIViewControllerRepresentableContext<ImagePickerController>) {
         
+    }
+    
+    class Coordinator: NSObject {
+        var parent: ImagePickerController
+        
+        init(_ imagePickerController: ImagePickerController) {
+            self.parent = imagePickerController
+        }
     }
 }
 
