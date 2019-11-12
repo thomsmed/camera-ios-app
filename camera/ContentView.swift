@@ -9,24 +9,48 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var image: UIImage?
+    
+    @State var presentImagePicker = false
+    @State var presentCamera = false
+    @State var presentCustomCamera = false
+    
     var body: some View {
         NavigationView() {
             VStack() {
-                Image("apple")
+                if image != nil {
+                    Image(uiImage: image!)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                } else {
+                    Image("apple")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                }
                 Spacer()
                 VStack {
-                    NavigationLink(destination: ImagePickerController()) {
+                    Button(action: { self.presentImagePicker = true }) {
                         Text("Pick image")
                     }
                     .padding()
-                    NavigationLink(destination: CameraCaptureController()) {
+                    .sheet(isPresented: $presentImagePicker, content: {
+                        ImagePickerController(image: self.$image, isOpen: self.$presentImagePicker)
+                    })
+                    Button(action: { self.presentCamera = true }) {
                         Text("Default camera")
                     }
                     .padding()
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                    .sheet(isPresented: $presentCamera, content: {
+                        CameraCaptureController(image: self.$image, isOpen: self.$presentCamera)
+                    })
+                    Button(action: { self.presentCustomCamera = true }) {
                         Text("Custom camera")
                     }
                     .padding()
+                    .sheet(isPresented: $presentCustomCamera, content: {
+                        CustomCameraCaptureController(image: self.$image, isOpen: self.$presentCustomCamera)
+                    })
                 }
             }
         }
@@ -36,7 +60,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(image: nil)
     }
 }
 
