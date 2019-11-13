@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED2F5834237C6B3C0015925A /* CustomCameraOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2F5833237C6B3C0015925A /* CustomCameraOverlay.swift */; };
 		ED56CE9323789AD5007BC487 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED56CE9223789AD5007BC487 /* ImagePickerController.swift */; };
 		ED8FF0512379E889002716E6 /* CameraCaptureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8FF0502379E889002716E6 /* CameraCaptureController.swift */; };
 		ED8FF0532379E9BE002716E6 /* CustomCameraCaptureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8FF0522379E9BE002716E6 /* CustomCameraCaptureController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED2F5833237C6B3C0015925A /* CustomCameraOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraOverlay.swift; sourceTree = "<group>"; };
 		ED56CE9223789AD5007BC487 /* ImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
 		ED8FF0502379E889002716E6 /* CameraCaptureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureController.swift; sourceTree = "<group>"; };
 		ED8FF0522379E9BE002716E6 /* CustomCameraCaptureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraCaptureController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				ED56CE9223789AD5007BC487 /* ImagePickerController.swift */,
 				ED8FF0502379E889002716E6 /* CameraCaptureController.swift */,
 				ED8FF0522379E9BE002716E6 /* CustomCameraCaptureController.swift */,
+				ED2F5833237C6B3C0015925A /* CustomCameraOverlay.swift */,
 				EDC1161A23784778002934FC /* Assets.xcassets */,
 				EDC1161F23784778002934FC /* LaunchScreen.storyboard */,
 				EDC1162223784778002934FC /* Info.plist */,
@@ -282,6 +285,7 @@
 				EDC1161923784777002934FC /* ContentView.swift in Sources */,
 				ED56CE9323789AD5007BC487 /* ImagePickerController.swift in Sources */,
 				ED8FF0512379E889002716E6 /* CameraCaptureController.swift in Sources */,
+				ED2F5834237C6B3C0015925A /* CustomCameraOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
